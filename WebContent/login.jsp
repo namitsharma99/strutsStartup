@@ -11,11 +11,10 @@
 <title>Login Page</title>
 </head>
 <body>
-	<html:form action="loginAction" focus="id"><%--  enctype="multipart/form-data"> --%>
+	<html:form action="loginAction" method="post" focus="id" enctype="multipart/form-data">
 		ID: <html:text property="id"></html:text>
 		Name: <html:text property="name"></html:text>
-		<%-- Upload File: <html:file property="myFile"></html:file>
-		Upload Image: <html:img/> --%>
+		Upload File: <html:file property="myFile"></html:file>
 		<html:submit value="Submit"></html:submit>
 	</html:form>
 </body>
